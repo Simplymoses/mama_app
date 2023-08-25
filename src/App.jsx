@@ -5,28 +5,23 @@ import viteLogo from '/vite.svg'
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
+  return ( 
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="h-24 p-6 hover:shadow" alt="Special Momo Logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="flex space-x-4 min-h-screen">
+        <div className="w-1/5 bg-slate-300 space-y-2 border-2 border-black px-3 py-3">
+          <div className="bg-yellow-100 border-1 border-black px-1 py-4">SB Option 1</div>
+          <div className="bg-yellow-200 border-1 border-black px-1 py-4">SB Option 2</div>
+          <div className="bg-yellow-300 border-1 border-black px-1 py-4">SB Option 3</div>
+          <div className="bg-yellow-400 border-1 border-black px-1 py-4">SB Option 4</div>
+          <div className="bg-yellow-500 border-1 border-black px-1 py-4">SB Option 5</div>
+          <div className="bg-yellow-600 border-1 border-black px-1 py-4">SB Option 6</div>
+          <div className="bg-yellow-700 border-1 border-black px-1 py-4">SB Option </div>
+        </div>
+        <div className="w-4/5 bg-orange-500 border 2 border-black text-center h-16">TN
+          
+        </div>
       </div>
-      <h1 className='text-purple-500'>Vite + React</h1>
-      <div className="p-8 text-red-500">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        
     </>
   )
 }
