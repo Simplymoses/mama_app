@@ -1,7 +1,7 @@
-import Sidebar from './components/Sidebar'
-import Topbar from './components/Topbar'
+import Sidebar from '../components/Sidebar'
+import Topbar from '../components/Topbar'
 
-const App = () => {
+const HomePage = () => {
   return ( 
     <>
       <div className="flex space-x-4 min-h-screen">
@@ -12,4 +12,4 @@ const App = () => {
   )
 }
 
-export default App
+export default HomePage
