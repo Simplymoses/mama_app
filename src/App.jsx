@@ -9,7 +9,7 @@ const App = () => {
     <>
       <div className="flex">
         <div 
-          className={`bg-pink-300 h-screen p-5 pt-8 ${
+          className={`bg-pink-300 h-screen p-5 pt-8 rounded-r-2xl ${
             open ? "w-72" : "w-20"
           } duration-300 relative`}
         >
@@ -21,14 +21,19 @@ const App = () => {
           onClick={() => setOpen(!open)} 
         />
         <div className="inline-flex">
-          <BsChatSquareHeartFill className="bg-pink-300 text-4xl
-          rounded cursor-pointer block float-left mr-2 pt-1" />
+          <BsChatSquareHeartFill 
+            className={`bg-pink-300 text-4xl rounded 
+            cursor-pointer block float-left mr-2 pt-1 duration-500 ${
+              open && "rotate-[360deg]"
+            }`} 
+          />
           <h1 className={`text-white origin-left font-medium
           text-2xl duration-300 ${!open && "scale-0"}`}>
             MamaApp
           </h1>
         </div>
-          
+
+ 
         </div>
 
         <div className="p-7">
