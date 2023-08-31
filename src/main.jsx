@@ -2,13 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './index.css'
-import Homescreen from './pages/Homescreen'
-import Sidebarvar from './pages/Sidebarvar'
+import App from './App'
+import Josiah from './pages/Josiah'
 
 const router = createBrowserRouter([
-  {path: '/homes', element: <Homescreen/>},
-  {path: '/sidebarv', element: <Sidebarvar/>},
-
+  {path: '/', element: <App/>}, 
+  {path: '/josiah-laughs', element: <Josiah/>}, 
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
